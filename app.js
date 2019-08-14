@@ -25,37 +25,37 @@ function opponentChoose(userChoice) {
     switch (opponentChoice) {
       case 0:
         score.ties += 1;
-        return "We both chose rock, so it's a tie.";
+        return "We both chose <i class='far fa-hand-rock text-primary'></i>rock, so it's a <span class='text-primary'>tie</span>.";
       case 1:
         score.losses += 1;
-        return "I chose paper, and paper beats rock, so you lose.";
+        return "I chose <i class='far fa-hand-paper text-danger'></i>paper, and <i class='far fa-hand-paper text-danger'></i>paper beats <i class='far fa-hand-rock text-success'></i>rock, so you <span class='text-danger'>lose</span>.";
       case 2:
         score.wins += 1;
-        return "I chose scissors, and rock beats scissors, so you win.";
+        return "I chose <i class='far fa-hand-scissors text-danger'></i>scissors, and <i class='far fa-hand-rock text-success'></i>rock beats <i class='far fa-hand-scissors text-danger'></i>scissors, so you <span class='text-success'>win</span>.";
     }
   } else if (userChoice == "paper") {
     switch (opponentChoice) {
       case 0:
         score.wins += 1;
-        return "I chose rock, and paper beats rock, so you win.";
+        return "I chose <i class='far fa-hand-rock text-danger'></i>rock, and <i class='far fa-hand-paper text-success'></i>paper beats <i class='far fa-hand-rock text-danger'></i>rock, so you <span class='text-success'>win</span>.";
       case 1:
         score.ties += 1;
-        return "We both chose paper, so it's a tie.";
+        return "We both chose <i class='far fa-hand-paper text-primary'></i>paper, so it's a <span class='text-primary'>tie</span>.";
       case 2:
         score.losses += 1;
-        return "I chose scissors, and scissors beat paper, so you lose.";
+        return "I chose <i class='far fa-hand-scissors text-danger'></i>scissors, and <i class='far fa-hand-scissors text-danger'></i>scissors beat <i class='far fa-hand-paper text-success'></i>paper, so you <span class='text-danger'>lose</span>.";
     }
   } else {
     switch (opponentChoice) {
       case 0:
         score.losses += 1;
-        return "I chose rock, and rock beats scissors, so you lose.";
+        return "I chose <i class='far fa-hand-rock text-danger'></i>rock, and <i class='far fa-hand-rock text-danger'></i>rock beats <i class='far fa-hand-scissors text-success'></i>scissors, so you <span class='text-danger'>lose</span>.";
       case 1:
         score.wins += 1;
-        return "I chose paper, and scissors beat paper, so you win.";
+        return "I chose <i class='far fa-hand-paper text-danger'></i>paper, and <i class='far fa-hand-scissors text-success'></i>scissors beat <i class='far fa-hand-paper text-danger'></i>paper, so you <span class='text-success'>win</span>.";
       case 2:
         score.ties += 1;
-        return "We both chose scissors, so it's a tie.";
+        return "We both chose <i class='far fa-hand-scissors text-primary'></i>scissors, so it's a <span class='text-primary'>tie</span>.";
     }
   }
 }
@@ -71,7 +71,7 @@ function play(userChoice) {
   } else {
     user.innerHTML = "<img src='scissors.png' alt='' height='150px' width='150px'>"
   }
-  result.textContent = opponentChoice;
+  result.innerHTML = opponentChoice;
   let wins = document.querySelector("#wins");
   let losses = document.querySelector("#losses");
   let ties = document.querySelector("#ties");

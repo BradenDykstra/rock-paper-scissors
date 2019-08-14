@@ -8,6 +8,7 @@
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,19 +19,22 @@
       <div class="row d-flex justify-content-center mt-5">
         <div class="col-md-12">
 
-          <button onclick="play('rock')" class="btn btn-dark mr-5 shadow rounded-pill">Rock</button>
+          <button onclick="play('rock')" class="btn btn-dark mr-5 shadow rounded-pill"><i
+              class="far fa-hand-rock"></i>Rock</button>
           <img class="mb-3 bg-secondary rounded shadow" src="rock.png" alt="rock" width="100px" height="100px"
             onclick="play('rock')">
         </div>
         <div class="col-md-12">
 
-          <button onclick="play('paper')" class="btn btn-dark mr-5 shadow rounded-pill">Paper</button>
+          <button onclick="play('paper')" class="btn btn-dark mr-5 shadow rounded-pill"><i
+              class="far fa-hand-paper"></i>Paper</button>
           <img class="mb-3 bg-secondary rounded shadow" src="paper.png" alt="paper" width="100px" height="100px"
             onclick="play('paper')">
         </div>
         <div class="col-md-12">
 
-          <button onclick="play('scissors')" class="btn btn-dark mr-5 shadow rounded-pill">Scissors</button>
+          <button onclick="play('scissors')" class="btn btn-dark mr-5 shadow rounded-pill"><i
+              class="far fa-hand-scissors"></i>Scissors</button>
 
           <img class="mb-3 bg-secondary rounded shadow" src="scissors.png" alt="scissors" width="100px" height="100px"
             onclick="play('scissors')">
@@ -49,7 +53,8 @@
         <h3 id="result">Pick Something!</h3>
       </div>
       <div class="row d-flex justify-content-center">
-        <h4 class="m-3"><span class="text-success">Wins</span>/<span class="text-danger">Losses</span>/<span>Ties</span>
+        <h4 class="m-3"><span class="text-success">Wins</span>/<span class="text-danger">Losses</span>/<span
+            class="text-primary">Ties</span>
         </h4>
       </div>
       <div class="row d-flex justify-content-center">
@@ -57,7 +62,7 @@
         <h4>/</h4>
         <h4 id="losses" class="text-danger">0</h4>
         <h4>/</h4>
-        <h4 id="ties">0</h4>
+        <h4 id="ties" class="text-primary">0</h4>
       </div>
     </div>
   </div>
