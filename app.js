@@ -65,11 +65,11 @@ function play(userChoice) {
   let opponentChoice = opponentChoose(userChoice);
   let user = document.querySelector("#user");
   if (userChoice == 'rock') {
-    user.innerHTML = "<img src='rock.png' alt='' height='150px' width='150px'>"
+    user.innerHTML = "<img src='rock.png' alt='rock' height='150px' width='150px'>"
   } else if (userChoice == 'paper') {
-    user.innerHTML = "<img src='paper.png' alt='' height='150px' width='150px'>"
+    user.innerHTML = "<img src='paper.png' alt='paper' height='150px' width='150px'>"
   } else {
-    user.innerHTML = "<img src='scissors.png' alt='' height='150px' width='150px'>"
+    user.innerHTML = "<img src='scissors.png' alt='scissors' height='150px' width='150px'>"
   }
   result.innerHTML = opponentChoice;
   let wins = document.querySelector("#wins");
