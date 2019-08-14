@@ -16,24 +16,32 @@
     <div class="jumbotron text-center rounded-0 min-vh-100">
       <h1 class="bg-dark text-light rounded-pill shadow">Rock Paper Scissors</h1>
       <div class="row d-flex justify-content-center mt-5">
-        <button onclick="play('rock')" class="btn btn-dark mt-5 mx-5 shadow rounded-pill">Rock</button>
-        <button onclick="play('paper')" class="btn btn-dark mt-5 mx-5 shadow rounded-pill">Paper</button>
-        <button onclick="play('scissors')" class="btn btn-dark mt-5 mx-5 shadow rounded-pill">Scissors</button>
-      </div>
-      <div class="row d-flex justify-content-center mb-5">
-        <img class="m-5 bg-secondary rounded shadow" src="rock.png" alt="rock" width="100px" height="100px"
-          onclick="play('rock')">
-        <img class="m-5 bg-secondary rounded shadow" src="paper.png" alt="paper" width="100px" height="100px"
-          onclick="play('paper')">
-        <img class="m-5 bg-secondary rounded shadow" src="scissors.png" alt="scissors" width="100px" height="100px"
-          onclick="play('scissors')">
-      </div>
-      <div class="row d-flex justify-content-center mb-5">
-        <div id="user" class="px-5 bg-success rounded-pill shadow vs-imgs">
-          <img src="" alt=""">
+        <div class="col-md-12">
+
+          <button onclick="play('rock')" class="btn btn-dark mr-5 shadow rounded-pill">Rock</button>
+          <img class="mb-3 bg-secondary rounded shadow" src="rock.png" alt="rock" width="100px" height="100px"
+            onclick="play('rock')">
         </div>
-        <img src=" vs.png" alt="" height="150px" class="mx-5">
-          <div id="opponent" class="px-5 bg-danger rounded-pill shadow vs-imgs">
+        <div class="col-md-12">
+
+          <button onclick="play('paper')" class="btn btn-dark mr-5 shadow rounded-pill">Paper</button>
+          <img class="mb-3 bg-secondary rounded shadow" src="paper.png" alt="paper" width="100px" height="100px"
+            onclick="play('paper')">
+        </div>
+        <div class="col-md-12">
+
+          <button onclick="play('scissors')" class="btn btn-dark mr-5 shadow rounded-pill">Scissors</button>
+
+          <img class="mb-3 bg-secondary rounded shadow" src="scissors.png" alt="scissors" width="100px" height="100px"
+            onclick="play('scissors')">
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center mb-5">
+        <div id="user" class="px-md-5 bg-success rounded-pill shadow vs-imgs">
+          <img src="" alt=""">
+      </div>
+        <img src=" vs.png" alt="" height="150px" class="mx-lg-5">
+          <div id="opponent" class="px-md-5 bg-danger rounded-pill shadow vs-imgs">
             <img src="" alt="">
           </div>
         </div>
