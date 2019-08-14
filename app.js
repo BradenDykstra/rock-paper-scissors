@@ -25,37 +25,37 @@ function opponentChoose(userChoice) {
     switch (opponentChoice) {
       case 0:
         score.ties += 1;
-        return "I chose rock, it's a tie";
+        return "We both chose rock, so it's a tie.";
       case 1:
         score.losses += 1;
-        return "I chose paper, you lose";
+        return "I chose paper, and paper beats rock, so you lose.";
       case 2:
         score.wins += 1;
-        return "I chose scissors, you win";
+        return "I chose scissors, and rock beats scissors, so you win.";
     }
   } else if (userChoice == "paper") {
     switch (opponentChoice) {
       case 0:
         score.wins += 1;
-        return "I chose rock, you win";
+        return "I chose rock, and paper beats rock, so you win.";
       case 1:
         score.ties += 1;
-        return "I chose paper, it's a tie";
+        return "We both chose paper, so it's a tie.";
       case 2:
         score.losses += 1;
-        return "I chose scissors, you lose";
+        return "I chose scissors, and scissors beat paper, so you lose.";
     }
   } else {
     switch (opponentChoice) {
       case 0:
         score.losses += 1;
-        return "I chose rock, you lose";
+        return "I chose rock, and rock beats scissors, so you lose.";
       case 1:
         score.wins += 1;
-        return "I chose paper, you win";
+        return "I chose paper, and scissors beat paper, so you win.";
       case 2:
         score.ties += 1;
-        return "I chose scissors, it's a tie";
+        return "We both chose scissors, so it's a tie.";
     }
   }
 }
