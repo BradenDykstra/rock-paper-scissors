@@ -15,7 +15,7 @@ function opponentChoose(userChoice) {
   // }
   let opponent = document.querySelector("#opponent");
   if (opponentChoice == 0) {
-    opponent.innerHTML = "<img src='rock.webp' alt='' height='150px' width='150px'>"
+    opponent.innerHTML = "<img src='rock.png' alt='' height='150px' width='150px'>"
   } else if (opponentChoice == 1) {
     opponent.innerHTML = "<img src='paper.png' alt='' height='150px' width='150px'>"
   } else {
@@ -65,7 +65,7 @@ function play(userChoice) {
   let opponentChoice = opponentChoose(userChoice);
   let user = document.querySelector("#user");
   if (userChoice == 'rock') {
-    user.innerHTML = "<img src='rock.webp' alt='' height='150px' width='150px'>"
+    user.innerHTML = "<img src='rock.png' alt='' height='150px' width='150px'>"
   } else if (userChoice == 'paper') {
     user.innerHTML = "<img src='paper.png' alt='' height='150px' width='150px'>"
   } else {
