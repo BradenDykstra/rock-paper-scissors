@@ -10,3 +10,7 @@
   min-width: 250px;
   min-height: 150px;
 }
+
+.select-imgs:hover {
+  cursor: pointer;
+}
