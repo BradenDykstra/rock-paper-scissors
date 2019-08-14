@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="jumbotron text-center rounded-0 min-vh-100">
+      <h1 class="bg-dark text-light rounded-pill shadow">Rock Paper Scissors</h1>
+      <div class="row d-flex justify-content-center mt-5">
+        <button onclick="play('rock')" class="btn btn-dark mt-5 mx-5 shadow rounded-pill">Rock</button>
+        <button onclick="play('paper')" class="btn btn-dark mt-5 mx-5 shadow rounded-pill">Paper</button>
+        <button onclick="play('scissors')" class="btn btn-dark mt-5 mx-5 shadow rounded-pill">Scissors</button>
+      </div>
+      <div class="row d-flex justify-content-center mb-5">
+        <img class="m-5 bg-secondary rounded shadow" src="rock.webp" alt="rock" width="100px" height="100px"
+          onclick="play('rock')">
+        <img class="m-5 bg-secondary rounded shadow" src="paper.png" alt="paper" width="100px" height="100px"
+          onclick="play('paper')">
+        <img class="m-5 bg-secondary rounded shadow" src="scissors.png" alt="scissors" width="100px" height="100px"
+          onclick="play('scissors')">
+      </div>
+      <div class="row d-flex justify-content-center mb-5">
+        <div id="user" class="px-5 bg-success rounded-pill shadow">
+          <img src="" alt="">
+        </div>
+        <img src="vs.png" alt="" height="150px">
+        <div id="opponent" class="px-5 bg-danger rounded-pill shadow">
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center mb-3 pb-3">
+        <h3 id="result">Pick Something!</h3>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <h4 class="m-3"><span class="text-success">Wins</span>/<span class="text-danger">Losses</span>/<span>Ties</span>
+        </h4>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <h4 id="wins" class="text-success">0</h4>
+        <h4>/</h4>
+        <h4 id="losses" class="text-danger">0</h4>
+        <h4>/</h4>
+        <h4 id="ties">0</h4>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
